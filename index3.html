@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>Learning Jquery</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<style>
+#cerc {
+background-color:green;
+height:300px;
+width:300px;
+border-radius:300px;
+}
+
+.patrat {
+height:200px;
+width:200px;
+background-color:red;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<p>This is some text.</p>
+
+<button id="fader">Fade out</button>
+<button id="faderIn">Fade In</button>
+
+
+
+
+
+
+
+</body>
+
+<script>
+
+$("#fader").click(function() {
+$("p").fadeOut("slow", function() {
+
+alert("FadeOut complete!");
+
+
+});
+
+});
+
+$("#faderIn").click(function() {
+$("p").fadeIn();
+
+
+
+});
+
+</script>
+
+
+
+
+</body>
+</html>

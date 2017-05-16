@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>Learning Jquery</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<style>
+#cerc {
+background-color:green;
+height:200px;
+width:200px;
+border-radius:100px;
+}
+
+.patrat {
+height:200px;
+width:200px;
+background-color:red;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<p>This is just some text</p>
+
+<div id="cerc"></div>
+
+<iframe src="http://www.cnn.com"></iframe>
+
+
+
+</body>
+
+<script>
+
+$("#cerc").hover(function() {
+$("iframe").attr("src", "http://www.ecowebhosting.co.uk");
+
+
+
+})
+
+</script>
+
+
+
+
+</body>
+</html>

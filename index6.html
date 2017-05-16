@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<title>Learning Jquery</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+
+<style>
+#patrat {
+height:200px;
+width:200px;
+background-color:pink;
+}
+
+
+#patrat2 {
+height:200px;
+width:200px;
+background-color:green;
+}
+
+#target {
+height:230px;
+width:230px;
+background-color:yellow;
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div id="patrat">
+Misca-ma!
+</div>
+
+<div id="patrat2">
+Mareste-ma!
+</div>
+
+<div id="target"></div>
+
+
+
+
+
+
+</body>
+
+<script>
+
+$("#patrat").draggable();
+   
+
+$("#patrat2").resizable(); 
+
+$("#target").droppable({
+drop:function(ui, event){
+$("#target").css("background-color","red")
+
+}
+});
+
+</script>
+
+
+
+
+</body>
+</html>
